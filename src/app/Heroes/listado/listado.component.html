@@ -1,16 +1,28 @@
+<h1>Listado de Super Heroes Chidos</h1>
+
+
+
+<ul>
+
+<li *ngFor="let heroe of heroes; let indice = index">
+
+  {{ indice + 1 }} - {{ heroe }} <button (click)="removeItem(indice)"> <br>Borrar</button>
+
+</li>
+
+
+<div>
+
+</div>
+
+
+<h2>Elementos eliminados</h2>
+
 <h1>
 
-    Lista de Super Heroes Cañones
-  
-  </h1>
-  
-  
-  
-  <ul>
-  
-  <li *ngFor="let heroe of heroes; let i = index">
-  
-    {{ i + 1 }} - {{ heroe }}
-  
-  </li>
-  <button (click)=""
+  Has Eliminado a :<li *ngFor="let heroe of eliminar; let i = index">
+
+  {{ i + 1 }} - {{ heroe }}
+
+
+</li>
