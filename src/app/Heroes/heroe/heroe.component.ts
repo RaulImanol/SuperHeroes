@@ -44,8 +44,5 @@ export class HeroeComponent {
 
     }
 
-get NombreMayusculas(): string{
-    return this.nombre.toUpperCase();
-}
 
 }
