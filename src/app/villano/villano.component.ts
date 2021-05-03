@@ -1,4 +1,3 @@
-import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Villano } from './villano';
 @Component({
@@ -7,6 +6,7 @@ import { Villano } from './villano';
  styleUrls: ['./villano.component.css']
 })
 export class VillanoComponent implements OnInit {
+
 selectedVillano?: Villano;
 villanos: Villano[]=[
  {id:1, name: "REVOLVER OCELOT", nivel: 700, namepower: "REVOLVER"},
@@ -16,7 +16,7 @@ villanos: Villano[]=[
  {id:5, name: "XERXERS", nivel:300, namepower: "PREDICCION"},
 ];
  numero = 0;
- base = 5;
+ base = 500;
  constructor() { }
  ngOnInit() {
  }

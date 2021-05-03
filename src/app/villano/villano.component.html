@@ -1,3 +1,6 @@
+<h1>Proyecto Departamental</h1>
+<h3>España Soria Raul Imanol 15601</h3>
+
 <h2>Super Villanos</h2>
 <ul class="villanos">
 <li *ngFor="let villano of villanos" [class.selected]="villano === selectedVillano" 
@@ -6,9 +9,7 @@
 </li>
 </ul>
 <div *ngIf="selectedVillano">
- <h2>
- {{selectedVillano.name | uppercase}} Detalles
- </h2>
+ <h2> {{selectedVillano.name | uppercase}} Origenes</h2>
  <ul class="villanos">
  <li>
  <label class="badge" for="villano-name">Nombre del Villano</label>
@@ -28,7 +29,9 @@
  </li>
  </ul>
 <label for="hero-universo">Incrementar Poder - Decrementar Poder: </label>
+<br>
  <button (click) = 'acumulador(base)'>+{{base}}</button>
  <input id="hero-universo" placeholder={{selectedVillano.nivel+numero}}>
+
  <button (click)='acumulador(-base)'>-{{base}}</button>
 </div>
